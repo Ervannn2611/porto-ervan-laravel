@@ -1,0 +1,83 @@
+/* Mobile Version */
+@media(max-width: 476px) {
+    :root {
+        /* Font Size */
+        --normal-font-size: 14px;
+        --subtitle-font-size: 16px;
+        --title-font-size: 18px;
+        --heading-font-size: 22px;
+        --display-font-size: 32px;
+    }
+
+    /* Navigation Bar (Navbar) */
+    .navbar-list {
+        display: flex;
+        position: fixed;
+        width: 40vw;
+        height: 100vh;
+        right: -1000px;
+        top: 100%;
+        flex-direction: column;
+        background-color: var(--default-background-color);
+        padding: 30px;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+}
+
+    .navbar-list.show {
+        right: 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* Content Section */
+    .content {
+        height: auto;
+        margin: 50px auto;
+    }
+
+    /* Home Section */
+    #home {
+        flex-direction: column-reverse;
+        justify-content: start;
+        text-align: center;
+        height: auto;
+    }
+
+    #home .home-text {
+        gap: 20px;
+    }
+
+    #home .home-img img{
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        object-position: center bottom;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    /* About Section */
+    #about {
+        text-align: center;
+    }
+
+    /* Skills Section */
+    .skill-box-group {
+        flex-direction: column;
+    }
+
+    /* Footer Section */
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
